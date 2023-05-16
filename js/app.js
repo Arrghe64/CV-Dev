@@ -13,11 +13,8 @@ let section = document.querySelector("section");
 toggle.addEventListener('click', function () {
   body.classList.toggle('open');
 });
-// toggle.addEventListener('click', function () {
-//   section.classList.toggle('open');
-// });
 
-
-// items.addEventListener('click', () => {
-//   body.classList.remove('open');
-// })
+//* envoi email
+function sendEmail() {
+  window.location.assign("mailto:schommersv06@gmail.com"); 
+}
