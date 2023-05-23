@@ -1,396 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- °° fonts awsome °° -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   <link rel="stylesheet" href="./css/style.css">
-   <title>P.F-V.S</title>
+	<meta charset="utf-8">
+	<title>CV Viviane</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--fichiers CDN de jQuery et Bootstrap (css & js) ; fichier de la police de caractère-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- font family -->
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	<!--lien vers les fichiers css et javascript-->
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
-<body>
-   <header>
-      <nav id="navbar"><!--nav-->
-         <div class="logo"><!--class logo-->
-            <img src="./docs/logoVS.png" alt="initiales">
-         </div>
-         <div class="toggle">
-            <i class="fas fa-bars ouvrir"></i>
-            <i class="fas fa-times fermer"></i>
-         </div>
-         <ul class="nav-items"><!--class menu-->
-            <li><a href="#">ACCUEIL</a></li>
-            <li><a href="#about" class="item">A PROPOS</a></li>
-            <li class="item"><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#hobbies" class="item">LOISIRS</a></li>
-            <li><a href="#contact" class="item">CONTACT</a></li>
-         </ul>
-      </nav>
-   </header>
-   <!-- ------------------------------------------------------------ -->
-   <section id="home">
-      <div class="text-holder">
-         <h1>Viviane <span>Schommers</span></h1>
-         <h3><span>Developpeuse Web</span><br> Basée à Cagnes sur Mer</h3>
-         <div class="button">
-            <button class="btn">
-               <a href="docs/CV-QRcode2.pdf" target="_blank">Télécharger mon CV</a>
-            </button>
-         </div>
-      </div>
-      <div class="image">
-         <a href="#portfolio"><img src="./docs/banc.JPG" alt=""></a>
-      </div>
-      <div class="footer-wrapper">
-         <div class="social-icons">
-            <a><i class="fa-brands fa-facebook-f"></i></a>
-            <a><i class="fa-brands fa-instagram"></i></a>
-            <a><i class="fa-brands fa-twitter"></i></a>
-            <a><i class="fa-brands fa-linkedin-in"></i></a>
-            <a><i class="fa-brands fa-pinterest-p"></i></a>
-         </div>
-         <div class="scroll-txt">
-            <a href="#about">Scroll</a>
-         </div>
-      </div>
-   </section>
-   <!-- --------------------------------------------------- -->
-   <section id="about">
-      <section class="skills">
-         <div class="heading-wrapper">
-            <div class="heading">
-               <h2>Mes Compétences</h2>
-            </div>
-            <div class="animate-bar"></div>
+<!------------------------------------------------------------------------------------->
 
-            <div class="container">
+<body data-spy="scroll" data-target=".navbar" data-offset="60"><!-- menu/section -->
 
-               <!--1 Progress Item skills -->
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>Html</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line html"></div>
-                  </div>
-               </div>
+	<!--- le menu ------------------------------------------------------------------>
 
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>Css</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line css"></div>
-                  </div>
-               </div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#about">Moi</a></li>
+					<li><a href="#skills">Compétences</a></li>
+					<li><a href="#experience">Expériences</a></li>
+					<li><a href="#education">Formations</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#loisirs">Centres d'intéret</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>Javascript</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line js"></div>
-                  </div>
-               </div>
+	<!--- En-tête photo + titre  --------------------------------------------------->
 
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>React</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line react"></div>
-                  </div>
-               </div>
+	<section class="container-fluid" id="about">
+		<div class="col-xs-8 col-md-4 profile-picture">
+			<img src="image/me3.png" alt="Viviane" class="img-circle">
+		</div>
+		<div class="heading">
+			<h1>Hello, moi c'est Viviane</h1>
+			<h3>Dev web autodidacte </h3>
+			<a href="docs/CV_Développeur_web.pdf" target="blank" class="button1">Télécharger le CV</a>
+		</div>
+	</section>
 
-            </div>
-            <div class="container">
+	<!--- section des compétences : des barres de progressions sur 2 colonnes ------>
 
-               <!--1 Progress Item soft skills -->
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>Espris d'équipe</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line soft espris"></div>
-                  </div>
-               </div>
+	<section id="skills">
+		<div class="red-divider"></div><!--petite ligne rouge-->
+		<div class="heading">
+			<h2>Compétences web</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- 1ère colonne -->
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+							style="width:85%">
+							<h5>HTML 85%</h5>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							style="width:60%">
+							<h5>CSS - BOOTSTRAP 60%</h5>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+							style="width:45%">
+							<h5>JAVASCRIPT - JQUERY 45%</h5>
+						</div>
+					</div>
+				</div>
 
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>Collaboration</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line soft"></div>
-                  </div>
-               </div>
+				<!-- 2ème colonne -->
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							style="width:50%">
+							<h5>PHP 50%</h5>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+							style="width:50%">
+							<h5>MYSQL 50%</h5>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"
+							style="width:35%">
+							<h5>C# 35%</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-               <div class="progress-item ">
-                  <div class="text">
-                     <h5>Curiosité</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line soft"></div>
-                  </div>
-               </div>
+	<!--- section expérience professionnelle  --------------------------------------->
 
-               <div class="progress-item">
-                  <div class="text">
-                     <h5>Autonomie</h5>
-                  </div>
-                  <div class="progress-bar">
-                     <div class="progress-line soft"></div>
-                  </div>
-               </div>
-            </div>
-      </section>
+	<section id="experience">
+		<div class="container">
+			<div class="white-divider"></div><!--petite ligne blanche-->
+			<div class="heading">
+				<h2>Expérience Professionnelle</h2>
+			</div>
+			<ul class="timeline">
+				<li><!-- panel stationnement -->
+					<div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+					<div class="timeline-panel-container">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h3>Stationnement</h3>
+								<h4>Agent d'exploitation qualifiée</h4>
+								<p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2007-aujourd'hui</p>
+							</div>
+							<div class="timeline-body">
+								<p>Maintenance et exploitation horodateurs Cagnes sur Mer</p>
+								<p>Gestion des abonnements et accueil clientèle</p>
+								<p>Regisseur adjointe voirie Vence</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><!-- panel nettoyage -->
+					<div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+					<div class="timeline-panel-container-inverted">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h3>Nettoyage</h3>
+								<h4>Artisan en nom propre</h4>
+								<p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2004-2013</p>
+							</div>
+							<div class="timeline-body">
+								<p>Travaux de nettoyage acrobatiques</p>
+								<p>Traitement grandes surfaces</p>
+								<p>Ponçage, vitrification de marbre</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><!-- panel éducation -->
+					<div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+					<div class="timeline-panel-container">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h3>Education</h3>
+								<h4>Intervenante péricolaire</h4>
+								<h4>Chef d'équipe autonomisation</h4>
+								<p class="text-muted"><small class="glyphicon glyphicon-time"></small> 1992-2001</p>
+							</div>
+							<div class="timeline-body">
+								<p>Mobilisation de l’enfant, suivit, médiation, autonomisation.</p>
+								<p>Activités culturelles, artistiques et sportives en centre aéré (Monaco)</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-      <div class="bottom-btn">
-         <div class="scroll-txt">
-            <a href="#resume">Scroll</a>
-         </div>
-         <div class="scroll-txt scroll-home">
-            <a href="#home">top</a>
-         </div>
-      </div>
-      <hr>
-      <section id="resume" class="resume">
-         <div class="heading-wrapper">
-            <div class="heading">
-               <h2>Mon Parcours</h2>
-            </div>
-            <div class="animate-bar"></div>
-            <div class="sub-heading">
-               <p>Je suis Viviane, dynamique et motivée, toujours prête à relever de
-                  nouveaux défis. <br> Après 15 de travail dans le stationnement, j'effectue une reconversion
-                  professionnelle dans le Développement Web, domaine qui m'intéressait et me passionne depuis de
-                  nombreuses années.</p>
-            </div>
-         </div>
-         <div class="container">
+	<!--- section formation  ------------------------------------------------------->
 
-            <!---------- Partie Expérience ---------->
-            <div class="experience">
-               <div class="title">
-                  <h4>Expérience</h4>
-               </div>
-
-               <div class="resume-item">
-                  <div class="item-arrow"></div>
-                  <h5>Maintenance horodateurs</h5>
-                  <span>Indigo / 2018 - 2022</span>
-                  <p>Maintenance, réparation, programmation et gestion du consommable et S.A.V, collecte des fonds.</p>
-               </div>
-
-               <div class="resume-item">
-                  <div class="item-arrow"></div>
-                  <h5>Agent d'expoitation</h5>
-                  <span>Indigo park / 2007 - 2017</span>
-                  <p>Accueil clients, vente abonnements, reporting, entretien des équipements, collecte des fonds.</p>
-               </div>
-
-               <div class="resume-item">
-                  <div class="item-arrow"></div>
-                  <h5>Artisan</h5>
-                  <span>AzurPropreté / 2004 - 2013</span>
-                  <p>Nettoyage de vitres accrobatique, ponçage de marbre.<br>
-                  </p>
-               </div>
-            </div>
-
-            <!---------- Partie Etudes ---------->
-            <div class="experience" style="top: -100px;">
-               <div class="title">
-                  <h4>Etudes</h4>
-               </div>
-
-               <div class="resume-item">
-                  <div class="item-arrow"></div>
-                  <h5>Concepteur/Developpeur Informatique</h5>
-                  <span>AFPA / 2016 - 2017</span>
-                  <p>Titre professionnel de niveau 6.<br>Composants d'interface, persistance des données, application
-                     n-tiers.</p>
-               </div>
-
-               <div class="resume-item">
-                  <div class="item-arrow"></div>
-                  <h5>Géographe</h5>
-                  <span>DEUG de géographie / 1995 - 2000</span>
-                  <p>Géographie physique, géographie humaine, environnement, aménagement du territoire, statistique,
-                  </p>
-               </div>
-
-               <div class="resume-item">
-                  <div class="item-arrow"></div>
-                  <h5>DAEU A</h5>
-                  <span>Equivalance BAC / 1993 - 1994</span>
-                  <p>Diplôme d'accès aux études universitaires<br>option littéraire</p>
-               </div>
-
-            </div>
-         </div>
-      </section>
-      <div class="bottom-btn">
-         <div class="scroll-txt">
-            <a href="#portfolio">Scroll</a>
-         </div>
-         <div class="scroll-txt scroll-home">
-            <a href="#home">top</a>
-         </div>
-      </div>
-   </section>
-   <!-- ------------------------------------------------------------ -->
-   <section id="portfolio">
-      <div class="heading-wrapper">
-         <div class="heading">
-            <h2>Portfolio</h2>
-         </div>
-         <div class="animate-bar"></div>
-         <div class="sub-heading">
-            <p>Ensemble des réalisations et petits projets, <br>créés au cours de ma formation continue.<br>Actuellement
-               en cours de réalisation.</p>
-         </div>
-      </div>
-      <!---------- Gallery ---------->
-      <div class="gallery-wrapper">
-         <div class="gallery-nav">
-            <div class="gallery-filter">
-               <span class="filter-item active">All</span>
-               <span class="filter-item">CSS</span>
-               <span class="filter-item">Design</span>
-               <span class="filter-item">Games</span>
-            </div>
-         </div>
-
-         <div class="content-wrapper">
-            <div class="in-progress">
-               <h4>Work in progress</h4>
-               <ul class="anim-point">
-                  <li class="point"></li>
-                  <li class="point"></li>
-                  <li class="point"></li>
-                  <li class="point"></li>
-                  <li class="point"></li>
-               </ul>
-               <i class="fa-solid fa-triangle-exclamation"></i>
-            </div>
-         </div>
-      </div>
-      <div class="bottom-btn">
-         <div class="scroll-txt">
-            <a href="#hobbies">Scroll</a>
-         </div>
-         <div class="scroll-txt scroll-home">
-            <a href="#home">top</a>
-         </div>
-      </div>
-   </section>
-   <!-- ------------------------------------------------------------ -->
-   <section id="hobbies">
-      <!-- En-tête de section, avec ligne animée -->
-      <div class="heading-wrapper">
-         <div class="heading">
-            <h2>Loisirs</h2>
-         </div>
-         <div class="animate-bar"></div>
-         <div class="sub-heading">
-            <p></p>
-         </div>
-      </div>
-
-      <!-- Slider -->
-      <div class="slider-container slider-1">
-         <div class="slider-test">
-            <div class="slide-template">
-               <h5>Jeux vidéo</h5>
-               <p>Création de jeux vidéo</p>
-            </div>
-            <div class="slide-template">
-               <h5>Escalade</h5>
-               <p>Initiateur SAE - niveau 6a/6b</p>
-            </div>
-            <div class="slide-template">
-               <h5>Moto</h5>
-               <p>Circuit du Luc avec l'association Tortue Team</p>
-            </div>
-            <div class="slide-template">
-               <h5>Arts graphiques</h5>
-               <p>Dessin, peinture, illustration sur tablette</p>
-            </div>
-            <div class="slide-template">
-               <h5>Musique</h5>
-               <p>Batterie, djembé</p>
-            </div>
-            <div class="slide-template">
-               <h5>Jeux vidéo</h5>
-               <p>Création de jeux vidéo</p>
-            </div>
-         </div>
-      </div>
-      <div class="bottom-btn">
-         <div class="scroll-txt">
-            <a href="#contact">Scroll</a>
-         </div>
-         <div class="scroll-txt scroll-home">
-            <a href="#home">top</a>
-         </div>
-      </div>
-   </section>
-   <!-- ------------------------------------------------------------ -->
-   <section id="contact">
-      <div class="heading-wrapper">
-         <div class="heading">
-            <h2>Contactez-moi</h2>
-         </div>
-         <div class="animate-bar"></div>
-      </div>
-      <div class="container">
-         <form action="#">
-            <div class="title">
-               <h4>M'envoyer un message</h4>
-            </div>
-
-            <div class="form-row">
-               <div class="input-data">
-                  <input type="text" placeholder="Nom" required>
-               </div>
-               <div class="input-data">
-                  <input type="text" placeholder="Email" required>
-               </div>
-            </div>
-            <div class="input-data">
-               <input type="text" placeholder="Subjet" required>
-            </div>
-            <div class="input-data">
-               <textarea name="Massage" placeholder="Message" required></textarea>
-            </div>
-            <div class="form-row">
-<!--                <input type="submit" value="Send Your Massage" class="btn"> -->
-               <button class="btn">
-<!--                   <a class="mailto" href="mailto:schommersv06@gmail.com">Envoyer</a> -->
-                  <div onclick="sendEmail();">Envoyer</div>
-               </button>
-            </div>
-         </form>
-      </div>
-      
-      <div class="bottom-btn">
-         <div class="scroll-txt">
-            <a href="#contact"></a>
-         </div>
-         <div class="scroll-txt scroll-home">
-            <a href="#home">top</a>
-         </div>
-      </div>
-   </section>
+	<section id="education">
+		<div class="container">
+			<div class="heading">
+				<h2>Formation</h2>
+			</div>
+			<div class="row">
+				<!-- bloc afpa -->
+				<div class="col-sm-6">
+					<div class="education-bloc">
+						<h4>2016</h4>
+						<span class="glyphicon glyphicon-education"></span>
+						<h3>Centre de formation AFPA - NICE</h3>
+						<h4>Titre professionnel CDI <br /> <h5><i>Concepteur-Developpeur-Informatique</i></h5></h4>
+						<div class="red-divider"></div>
+						<p>Analyse - gestion de proget</p>
+						<p>Persistance des données</p>
+						<p>Application - Web</p>
+					</div>
+				</div>
+				<!-- bloc fac -->
+				<div class="col-sm-6">
+					<div class="education-bloc">
+						<h4>1994 - 1999</h4>
+						<span class="glyphicon glyphicon-education"></span>
+						<h3>Faculté de Géographie - NICE</h3>
+						<h4>DEUG de Géographie</h4>
+						<div class="red-divider"></div>
+						<p>préparation Maîtrise<br />option</p>
+						<p>Apénagement du Territoire</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
+	<!--- section portfolio  ------------------------------------------------------->
 
+	<section id="portfolio">
+		<div class="container">
 
+			<div class="white-divider"></div>
+			<div class="heading">
+				<h2>Portfolio</h2>
+			</div>
 
-   <script src="./js/app.js"></script>
+			<div class="row"> <!--première ligne-->
+				<div class="col-sm-4"><!--colonne 1-->
+					<a class="thumbnail" href="JeuSerpent/serpent.html" target="blank">
+						<img src="image/jeuSerpent.PNG" alt="facebook share"></a>
+				</div>
+				<div class="col-sm-4"><!--colonne 2-->
+					<a class="thumbnail" href="http://www.google.com" target="blank">
+						<img src="image/google_translate.png" alt="google translate"></a>
+				</div>
+				<div class="col-sm-4"><!--colonne 3-->
+					<a class="thumbnail" href="http://www.twitter.com" target="blank">
+						<img src="image/tweeter_video.png" alt="twitter"></a>
+				</div>
+			</div>
+
+			<div class="row"><!--deuxième ligne-->
+				<div class="col-sm-4"><!--colonne 1-->
+					<a class="thumbnail" href="http://www.youtube.com" target="blank">
+						<img src="image/youtube.png" alt="youtube"></a>
+				</div>
+				<div class="col-sm-4"><!--colonne 2-->
+					<a class="thumbnail" href="http://www.twitter.com" target="blank">
+						<img src="image/tweeter_retweet.png" alt="twitter retweet"></a>
+				</div>
+				<div class="col-sm-4"><!--colonne 3-->
+					<a class="thumbnail" href="http://www.facebook.com" target="blank">
+						<img src="image/facebook_video.png" alt="facebook video"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--- section centres d'interet  ---------------------------------------------->
+
+	<section id="loisirs">
+		<div class="container">
+			<div class="red-divider"></div>
+			<div class="heading">
+				<h2>Centres d'intéret</h2>
+			</div>
+			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="myCarousel" data-slide-to="1"></li>
+					<li data-target="myCarousel" data-slide-to="2"></li>
+					<li data-target="myCarousel" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h3>Escalade</h3>
+						<h4>Initiateur SAE - niveau 6a/6b</h4>
+					</div>
+					<div class="item">
+						<h3>Moto</h3>
+						<h4>Circuit du Lus avec l'association Tortue Team</h4>
+					</div>
+					<div class="item">
+						<h3>arts graphiques</h3>
+						<h4>Dessin, peinture, illustration sur tablette</h4>
+					</div>
+					<div class="item">
+						<h3>Musique</h3>
+						<h4>Batterie, djembé</h4>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!--- section centres d'interet  ---------------------------------------------->
+
+	<footer class="text-center">
+		<a href="#about"><span class="glyphicon glyphicon-chevron-up"></span></a>
+		<h5>© 2020 APPRENDRE-A-CODER.COM</h5>
+	</footer>
+
 </body>
 
 </html>
