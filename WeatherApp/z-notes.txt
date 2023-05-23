@@ -1,0 +1,59 @@
+>>> GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+>>> FONT AWSOME
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+>>> OPENWEATHER MAP
+api key : 
+63a138bd8648b0546cf4b19bdc920deb
+api url :
+https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API key}
+
+
+>>> PALETTES DE COULEUR
+BLEU ÉTOILÉ {
+	background: linear-gradient(#F2EBE5, #647295, #9F496E, #2B262D);
+}
+ASSIETTE COLORÉE {
+	background: linear-gradient(#F8EFEA, #DED369, #E0475B, #192F01);
+}
+SÉRÉNITÉ {
+	background: linear-gradient(#FBE0C3, #FFBB98, #7D8E95, #344648);
+}
+AGRUME {
+	background: linear-gradient(#FAE6B1, #FFA101, #B3DEE5, #31525B);
+}
+DYNAMIQUE {
+	background: linear-gradient(#FFFFFE, #F21137, #680202, #030303);
+}
+AMAZONE {
+	background: linear-gradient(#FFF9E9, #5A8100, #FFB400, #FF6C02);
+}
+VERT {
+	background: linear-gradient(#E3DCD2, #CC8B65, #013328, #100C0D);
+}
+ROUGE {
+	background: linear-gradient(#F8D4BA, #D69F3A, #C34F5A, #541412)
+}
+
+/* - {
+	background: linear-gradient(#, #, #, #)
+}
+*/
+/* - {
+	background: linear-gradient(#, #, #, #)
+}
+*/
+/* - {
+	background: linear-gradient(#, #, #, #)
+}
+*/
+/* - {
+	background: linear-gradient(#, #, #, #)
+}
+*/
+/* - {
+	background: linear-gradient(#, #, #, #)
+}
+*/
