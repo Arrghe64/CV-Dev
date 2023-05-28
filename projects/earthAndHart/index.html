@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Système solaire</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="container">
+         <hr>
+         <p>Moon around <br>earth around sun</p>
+         <div class="system">
+            <div class="sun"></div>
+            <div class="earth">
+               <div class="moon"></div>
+            </div>
+         </div>
+      </div>
+     
+      <div class="text">
+         <h1>Viviane <br>Schommers</h1>
+         <div class="animate-bar"></div>
+         <p>Web Developper</p>
+         <p class="front-end">Click me </p>
+         <div class="footer">
+            <div class="heart">
+               <p> 🧡 </p>
+            </div>
+            <a href="../../index.html" style="color:white">BACK</a>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      let coeur = document.querySelector('.heart');
+      coeur.addEventListener('click', () => {
+         coeur.classList.toggle('beat');
+      });
+   </script>
+</body>
+
+</html>
