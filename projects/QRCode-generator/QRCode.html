@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="QRCstyle.css">
+   <title>QR-Code generator | Arrghe</title>
+</head>
+
+<body>
+
+   <section>
+      <!-- première ligne de l'application -->
+      <div class="row">
+         <input type="color" class="light" value="#ffffff">
+         <input type="color" class="dark">
+         <!-- sélection de la taille de l'imge de sortie -->
+         <select class="sizes">
+            <option value="100">100x100</option>
+            <option value="200">200x200</option>
+            <option value="300">300x300</option>
+            <option selected value="400">400x400</option>
+            <option value="500">500x500</option>
+            <option value="600">600x600</option>
+            <option value="700">700x700</option>
+            <option value="800">800x800</option>
+            <option value="900">900x900</option>
+            <option value="1000">1000x1000</option>
+         </select>
+      </div>
+
+      <!-- texte à entrer pour générer le QRC -->
+      <input type="text" class="qr-text" placeholder="Entrer le QR Texte">
+
+      <!-- image généré en fonction du texte -->
+      <div id="qr-code"></div>
+
+
+      <div class="action-container">
+         <a href="#" class="download btn" download="QRCode">
+            <span>Télécharger</span>
+            <img src="./assets/download.svg" alt="">
+         </a>
+         <button class="btn share-btn">
+            <span>Partager</span>
+            <img src="./assets/share.svg" alt="">
+         </button>
+      </div>
+      <a href="../../index.html" style="color:#a0a0a0;text-decoration: none; font-size: 25px;text-align: center;padding-top: 50px;">BACK</a>
+   </section>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+   <script src="app.js"></script>
+</body>
+
+</html>
