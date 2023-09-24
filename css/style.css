@@ -286,12 +286,9 @@ color: #fff;
 #portfolio .heading h2{
     color: #fff;
 }
-#portfolio .thumbnail{
-    height: 239.961px;
-}
 #portfolio .thumbnail img{
     width: 100%;
-    height: 100%;
+    height: 236px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
