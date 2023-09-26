@@ -99,7 +99,7 @@ ul, li{
     display: inline-block;
     margin-top: 20px;
     padding: 18px 50px;
-    border-radius: 3px;
+    border-radius: 10px;
     transition: all 0.3s ease-in 0s;
 }
 .button1:hover{
