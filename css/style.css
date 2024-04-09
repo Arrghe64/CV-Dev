@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    /* width: 100vh; */
 }
 h1,h1,h3,h4,h5,h6{
     font-weight: bold;
@@ -11,40 +12,78 @@ img{
     height: auto;
 }
 section{
+    /* width: 100%; */
     padding: 45px 0 80px 0;
 }
 section .heading{
     text-align: center;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 section .heading{
     text-transform: uppercase;
 }
+/* ! Ajouter une animation */
 .red-divider{
     width: 100px;
     height: 2px;
     background: #d82c2e;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 .white-divider{
     width: 100px;
     height: 2px;
     background: #fff;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 ul, li{
     list-style: none;
 }
-
+.button1, .button0{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in 0s;
+}
+.button1:hover{
+    background: #fff;
+    color: #d82c2e;
+    text-decoration: none;
+}
+.button2{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d82c2e;
+    border: 1px solid #d82c2e;
+    padding: 18px 50px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.button2:hover{
+    background: #d82c2e;
+    color: #fff;
+    text-decoration: none;
+}
 
 /* MENU */
 
 .navbar{
+    max-width: 100vw;
     background: #d82c2e;
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0;
+}
+.navbar .container {
+    width: 100vw;
 }
  .navbar .navbar-nav{
    display: inline-block;
@@ -72,13 +111,17 @@ ul, li{
 /* ABOUT */
 
 #about{
-    margin-top: 100px;
+    width: 100vw;
+    min-height: 100vh;
     background: #d82c2e;
 }
 .profile-picture{
     text-align: center;
-    margin: 0 auto;
+    margin: 100px auto;
     float: none;
+}
+#about .heading {
+    height: 50%;
 }
 #about .heading h1{
     color: #fff;
@@ -86,40 +129,57 @@ ul, li{
 }
 #about .heading h3{
     color: #000;
+    padding: 20px 0;
 }
 .heading a {
     text-decoration: none;
     color: #ffffff;
 }
-.button1{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid white;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 18px 50px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in 0s;
+#about .button1 {
+    margin-top: 100px;
 }
-.button1:hover{
-    background: #fff;
-    color: #d82c2e;
-    text-decoration: none;
-}
+
 
 /* SKILLS - COMPETENCES */
 
 #skills{
+    width: 100vw;
+    height: 100vh;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    position: relative;
 }
 #skills .heading h2{
     color: #d82c2e;
+    margin: 80px 0 40px 0;
+}
+#skills .container {
+    /* margin: 30px 0; */
+    /* background-color: #236589; */
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#skills .row {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
 }
 #skills .progress{
-    height: 100%;
-    margin: 30px 20px;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 12%;
+    margin: 40px 20px;
     background: #ddd;
+}
+#skills h5 {
+    font-size: 1.2rem;
 }
 #skills .progress-bar{
     background: #d82c2e;
@@ -127,10 +187,38 @@ ul, li{
 #skills .progress h5{
     text-shadow: 1px 1px 1px #000;
 }
+.btnBox{
+    display: flex;
+    justify-content: center;
+}
+#skills .button2 {
+    position: absolute;
+    bottom: 50px;
+}
+.soft {
+    /* background-color: #aaa; */
+    /* width: 90vw; */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.soft h2 {
+    text-transform: uppercase;
+    color: #d82c2e;
+    margin-bottom: 10px;
+}
+.soft span {
+    font-size: 2.4rem;
+}
+
 
 /* EXPERIENCE */
 
 #experience{
+    width: 100vw;
+    min-height: 100vh;
     background: #d82c2e;
 }
 #experience .heading h2{
@@ -242,16 +330,30 @@ color: #fff;
 /* FORMATION */
     
 #education{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #education .heading h2{
     color: #d82c2e;
+    padding-bottom: 50px;
+}
+.row {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
  .education-bloc{
-     width: 80%;
-     margin: 0 auto;
+     width: 90%;
+     margin: 0 20px;
      text-align: center;
-     padding: 30px;
+     padding: 20px;
      background: #ddd;
      border-radius: 10px;
      border: 2px solid #ccc;
@@ -277,14 +379,28 @@ color: #fff;
 .education-bloc .red-divider{
     margin-bottom: 20px;
 }
+#education .btnBox {
+    position: absolute;
+    margin-bottom: 60px;
+}
 
 /* PORTFOLIO */
 
 #portfolio{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
     background: #d82c2e;
+    padding-bottom: 0;
+}
+#portfolio .heading {
+    padding-bottom: 30px;
 }
 #portfolio .heading h2{
     color: #fff;
+}
+.boxFolio {
+    margin-bottom: 50px;
 }
 #portfolio .thumbnail img{
     width: 100%;
@@ -296,14 +412,22 @@ color: #fff;
     filter: none;
     -webkit-filter: none;
 }
-
+#education .btnBox {
+    position: absolute;
+    bottom: 0px;
+}
 
 /* CENTRE D'INTERET */
 #loisirs{
+    height: 80vh;
+    width: 100vw;
     background: #fff;
 }
 #loisirs .heading{
     color: #d82c2e;
+}
+#myCarousel {
+    padding-top: 100px;
 }
 .carousel-control.left, .carousel-control.right{
     background-image: none;
@@ -330,8 +454,9 @@ color: #fff;
 /* FOOTER */
 
 footer{
+    width: 100vw;
     background: #333;
-    padding: 20px 0 40px;
+    padding: 20px 0 20px;
 }
 footer .glyphicon{
     font-size: 25px;
