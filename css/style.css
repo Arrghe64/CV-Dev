@@ -23,18 +23,53 @@ section .heading{
     text-transform: uppercase;
 }
 /* ! Ajouter une animation */
-.red-divider{
-    width: 100px;
-    height: 2px;
-    background: #d82c2e;
-    margin: 30px auto;
-}
+/* 
 .white-divider{
     width: 100px;
     height: 2px;
     background: #fff;
     margin: 30px auto;
+} */
+.white-divider {
+    background-color: #fff;
 }
+.red-divider {
+   background-color: #F21137;
+}
+.white-divider, .red-divider {
+    width: 100px;
+    /* width: 5rem; */
+    height: 4px;
+    margin-top: 15px;
+    position: relative;
+    margin: 30px auto;
+}
+.red-divider::before{
+    border-left: 4px solid #fff;
+    border-right: px solid #fff;
+}
+.white-divider::before{
+    border-left: 4px solid #F21137;
+    border-right: px solid #F21137;
+}
+.red-divider::before, .white-divider::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 5px;
+   height: 100%;
+   animation: animate 3s linear infinite;
+}
+@keyframes animate {
+   from {
+      left: 0%;
+   }
+   to {
+      left: 100%;
+   }
+}
+
 ul, li{
     list-style: none;
 }
